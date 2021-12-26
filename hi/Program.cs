@@ -13,9 +13,12 @@ void FillArray(int[] fill)
 }
 
 void FormirationArray(int[] form)
-[
-    
-]
+{
+    for (int row = 0; row < form.Length; row++)
+    {
+        
+    }
+}
 
 
 
