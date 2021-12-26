@@ -5,6 +5,9 @@ int arrayLengthz = 5;
 int[] array = new int[arrayLengthz];
 int temp;
 int count = 0;
+
+
+
 void FillArray(int[] fill)
 {
     for (int row = 0; row < fill.Length; row++)
@@ -38,7 +41,12 @@ for (int row = 0; row < array.Length; row++)
     }
 }
 
+int[] arrayCopy = new int[count];
 
+for (int row = 0; row < arrayCopy.Length; row++)
+{
+    arrayCopy[row] = array[row];
+}
 
 Console.WriteLine();
 
@@ -47,3 +55,10 @@ for (int row = 0; row < array.Length; row++)
     Console.WriteLine(array[row] + "ар");
 }
 Console.WriteLine(count);
+Console.WriteLine();
+
+for (int row = 0; row < arrayCopy.Length; row++)
+{
+    Console.WriteLine(arrayCopy[row] + "ар");
+}
+
