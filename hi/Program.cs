@@ -22,6 +22,7 @@ for (int i = 0; i < array.Length; i++)
     Console.Write(array[i]);
 }
 
+
 for (int row = 0; row < array.Length; row++)
 {
     if (0 == array[row] % 2)
