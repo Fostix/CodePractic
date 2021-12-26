@@ -28,6 +28,13 @@
                 <mxCell id="17" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="16">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="28">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="100" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="8" value="for(int row = 0; row &amp;lt; array.Lenght; row++)&lt;br&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="150" y="320" width="260" height="80" as="geometry"/>
                 </mxCell>
@@ -37,8 +44,26 @@
                 <mxCell id="10" value="&lt;span&gt;int[row] = new Random() .Next(1,10);&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="480" y="300" width="240" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="if(" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="130" y="440" width="300" height="180" as="geometry"/>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="16" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="16" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="if(0 == row % 2)" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="430" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;entryX=0.962;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="18" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Console.Write(array[row] + &quot; &quot;);" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="432.5" width="220" height="57.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Print(array[row] + &quot; &quot;);" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="520" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="end" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="590" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
