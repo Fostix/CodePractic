@@ -22,21 +22,21 @@ FillArray(somethingArray);
 
 
 
-(int[], int) ForShift(int[] first)
+(int[], int) ForShift(int[] array)
 {
     int temp;
     int count = 0;
-    for (int row = 0; row < first.Length; row++)
+    for (int row = 0; row < array.Length; row++)
     {
-        if (0 == first[row] % 2)
+        if (0 == array[row] % 2)
         {
-            temp = first[row];
-            first[row] = 1;
-            for (int howRow = 0; howRow < first.Length; howRow++)
+            temp = array[row];
+            array[row] = 1;
+            for (int howRow = 0; howRow < array.Length; howRow++)
             {
-                if (0 != first[howRow] % 2 | 0 == first[howRow])
+                if (0 != array[howRow] % 2 | 0 == array[howRow])
                 {
-                    first[howRow] = temp;
+                    array[howRow] = temp;
                     count++;
                     break;
                 }
@@ -44,25 +44,46 @@ FillArray(somethingArray);
             Console.Write(temp + " темп");
         }
     }
+
+    int[] newArray = new int [count];
+
+    for (int row = 0; row < count; row++)
+    {
+        newArray[row] = array[row];
+        Console.Write(newArray+ "newAr  ");
+
+    }
+
+
+
     Console.Write(count + " count in M");
-    return (first, count);
+    return (array, count);
 }
 
 
 (int[], int) lol = ForShift(somethingArray);
-int[] array = lol.Item1;
+int[] newArray = lol.Item1;
 int count = lol.Item2;
 
 
+// void forCopyMethod(int[] array, int count)
+// {
 
 
 
 
-for (int i = 0; i < array.Length; i++)
-{
+// }
 
-    Console.Write(array);
-}
+
+
+// forCopyMethod(int[] array)
+
+
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     Console.Write(array);
+// }
 
 
 //Console.WriteLine(count);
@@ -72,25 +93,22 @@ for (int i = 0; i < array.Length; i++)
 
 
 
+for (int row = 0; row < arrayCopy.Length; row++)
+{
+    arrayCopy[row] = first[row];
+}
 
+Console.WriteLine();
 
+for (int row = 0; row < first.Length; row++)
+{
+    Console.WriteLine(first[row] + "ар");
+}
+//Console.WriteLine(count);
+Console.WriteLine();
 
-// for (int row = 0; row < arrayCopy.Length; row++)
-// {
-//     arrayCopy[row] = first[row];
-// }
-
-// Console.WriteLine();
-
-// for (int row = 0; row < first.Length; row++)
-// {
-//     Console.WriteLine(first[row] + "ар");
-// }
-// //Console.WriteLine(count);
-// Console.WriteLine();
-
-// for (int row = 0; row < arrayCopy.Length; row++)
-// {
-//     Console.WriteLine(arrayCopy[row] + "ар");
-// }
+for (int row = 0; row < arrayCopy.Length; row++)
+{
+    Console.WriteLine(arrayCopy[row] + "ар");
+}
 
