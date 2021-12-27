@@ -2,7 +2,7 @@
 // Первоначальный массив можно ввести с клавиатуры, либо сгенерировать случайным образом. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 int arrayLengthz = 5;
-int[] first = new int[arrayLengthz];
+int[] somethingArray = new int[arrayLengthz];
 
 
 
@@ -14,11 +14,11 @@ void FillArray(int[] fill)
         fill[row] = new Random().Next(1, 10);
     }
 }
-FillArray(first);
-for (int i = 0; i < first.Length; i++)
-{
-    //Console.Write(first[i]);
-}
+FillArray(somethingArray);
+// for (int i = 0; i < somethingArray.Length; i++)
+// {
+//     //Console.Write(first[i]);
+// }
 
 
 
@@ -31,7 +31,7 @@ for (int i = 0; i < first.Length; i++)
         if (0 == first[row] % 2)
         {
             temp = first[row];
-            first[row] = 0;
+            first[row] = 1;
             for (int howRow = 0; howRow < first.Length; howRow++)
             {
                 if (0 != first[howRow] % 2 | 0 == first[howRow])
@@ -44,16 +44,21 @@ for (int i = 0; i < first.Length; i++)
             Console.Write(temp + " темп");
         }
     }
+    Console.Write(count + " count in M");
     return (first, count);
 }
 
 
-(int[], int) lol = ForShift(first);
+(int[], int) lol = ForShift(somethingArray);
 int[] array = lol.Item1;
 int count = lol.Item2;
 
 
-for (int i = 0; i < count; i++)
+
+
+
+
+for (int i = 0; i < array.Length; i++)
 {
 
     Console.Write(array);
