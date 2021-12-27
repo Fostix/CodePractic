@@ -13,16 +13,16 @@ void FillArray(int[] fill)
     {
         fill[row] = new Random().Next(1, 10);
     }
+    // for(int row = 0; row < fill.Length; row++)
+    // {
+    //     Console.Write(fill[row] + " first");
+    // }
 }
 FillArray(somethingArray);
-// for (int i = 0; i < somethingArray.Length; i++)
-// {
-//     //Console.Write(first[i]);
-// }
 
 
 
-(int[], int) ForShift(int[] array)
+int[] ForCopyMethod(int[] array)
 {
     int temp;
     int count = 0;
@@ -41,29 +41,36 @@ FillArray(somethingArray);
                     break;
                 }
             }
-            Console.Write(temp + " темп");
+            Console.Write(temp);
         }
     }
 
-    int[] newArray = new int [count];
+    int[] newArray = new int[count];
 
     for (int row = 0; row < count; row++)
     {
         newArray[row] = array[row];
-        Console.Write(newArray+ "newAr  ");
-
     }
 
-
-
-    Console.Write(count + " count in M");
-    return (array, count);
+    Console.Write(count);
+    return newArray;
 }
 
+int[] mrArray = ForCopyMethod(somethingArray);
 
-(int[], int) lol = ForShift(somethingArray);
-int[] newArray = lol.Item1;
-int count = lol.Item2;
+
+PrintArray(mrArray);
+
+
+
+
+
+
+
+
+// (int[], int) lol = ForShift(somethingArray);
+// int[] newArray = lol.Item1;
+// int count = lol.Item2;
 
 
 // void forCopyMethod(int[] array, int count)
