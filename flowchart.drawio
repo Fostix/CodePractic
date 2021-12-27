@@ -206,11 +206,84 @@
                 <mxCell id="0W0a0CYIU2EytpzVWh9a-25" value="" style="edgeStyle=none;html=1;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-22" target="0W0a0CYIU2EytpzVWh9a-24">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-33" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-22" target="0W0a0CYIU2EytpzVWh9a-27">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="250" y="830"/>
+                            <mxPoint x="250" y="1010"/>
+                            <mxPoint x="433" y="1010"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="0W0a0CYIU2EytpzVWh9a-22" value="for(int row = 0; row &amp;lt; count; row++)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
                     <mxGeometry x="317.66" y="800" width="224.9" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="0W0a0CYIU2EytpzVWh9a-24" value="newArray[row" style="whiteSpace=wrap;html=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
-                    <mxGeometry x="370.11" y="940" width="120" height="60" as="geometry"/>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-26" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-24" target="0W0a0CYIU2EytpzVWh9a-22">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="960"/>
+                            <mxPoint x="580" y="830"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-24" value="newArray[row] = array[row];" style="whiteSpace=wrap;html=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="350.21" y="940" width="164.82" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-30" value="" style="edgeStyle=none;html=1;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-27" target="0W0a0CYIU2EytpzVWh9a-29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-35" value="" style="edgeStyle=none;html=1;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-27" target="0W0a0CYIU2EytpzVWh9a-34">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="1090"/>
+                            <mxPoint x="230" y="1290"/>
+                            <mxPoint x="433" y="1290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-27" value="for(int row = 0; row &amp;lt; array.Length; row++)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="303.93" y="1060" width="257.38" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-31" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-29" target="0W0a0CYIU2EytpzVWh9a-27">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="1230"/>
+                            <mxPoint x="580" y="1090"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-29" value="Console.Write(array[row]);" style="whiteSpace=wrap;html=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="335.23" y="1210" width="194.82" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-37" value="" style="edgeStyle=none;html=1;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-34" target="0W0a0CYIU2EytpzVWh9a-36">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-41" value="" style="edgeStyle=none;html=1;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-34" target="0W0a0CYIU2EytpzVWh9a-40">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="240" y="1380"/>
+                            <mxPoint x="240" y="1580"/>
+                            <mxPoint x="436" y="1580"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-34" value="for(int row = 0; row &amp;lt; newArray.Length; row++)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="288.96" y="1350" width="287.36" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-38" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="DKBDY1ygc_gVLrYvxeSk-1" source="0W0a0CYIU2EytpzVWh9a-36" target="0W0a0CYIU2EytpzVWh9a-34">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="620" y="1510"/>
+                            <mxPoint x="620" y="1380"/>
+                            <mxPoint x="590" y="1380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-36" value="Console.Write(newArray[row]);" style="whiteSpace=wrap;html=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="317.64" y="1490" width="237.36" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="0W0a0CYIU2EytpzVWh9a-40" value="end" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="DKBDY1ygc_gVLrYvxeSk-1">
+                    <mxGeometry x="376.32" y="1620" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

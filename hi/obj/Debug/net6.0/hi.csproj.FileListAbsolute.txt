@@ -1,0 +1,15 @@
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\hi.exe
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\hi.deps.json
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\hi.runtimeconfig.json
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\hi.dll
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\ref\hi.dll
+D:\GitHub\C# practic\Practic\hi\bin\Debug\net6.0\hi.pdb
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.csproj.AssemblyReference.cache
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.AssemblyInfoInputs.cache
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.AssemblyInfo.cs
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.csproj.CoreCompileInputs.cache
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.dll
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\ref\hi.dll
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.pdb
+D:\GitHub\C# practic\Practic\hi\obj\Debug\net6.0\hi.genruntimeconfig.cache
