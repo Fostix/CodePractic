@@ -1,10 +1,12 @@
 ﻿// Написать программу, которая из имеющегося массива целых чисел формирует массив из четных чисел. 
 // Первоначальный массив можно ввести с клавиатуры, либо сгенерировать случайным образом. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
-int arrayLengthz = 5;
-int[] array = new int[arrayLengthz];
-int temp;
-int count = 0;
+
+
+
+
+int[] somethingArray = new int[20];
+
 
 
 
@@ -12,53 +14,56 @@ void FillArray(int[] fill)
 {
     for (int row = 0; row < fill.Length; row++)
     {
-        fill[row] = new Random().Next(1, 10);
+        fill[row] = new Random().Next(-10, 10);
     }
-}
-FillArray(array);
-
-for (int i = 0; i < array.Length; i++)
-{
-    Console.Write(array[i]);
+    fill[4] = 1;
 }
 
-for (int row = 0; row < array.Length; row++)
+
+int[] ForCopyMethod(int[] array)
 {
-    if (0 == array[row] % 2)
+    int temp;
+    int count = 0;
+    for (int row = 0; row < array.Length; row++)
     {
-        temp = array[row];
-        array[row] = 0;
-        for (int howRow = 0; howRow < array.Length; howRow++)
+        if (0 == array[row] % 2)
         {
-            if (0 != array[howRow] % 2 | 0 == array[howRow])
+            temp = array[row];
+            for (int howRow = 0; howRow < array.Length; howRow++)
             {
-                array[howRow] = temp;
-                count++;
-                break;
+                if (0 != array[howRow] % 2)
+                {
+                    array[howRow] = temp;
+                    count++;
+                    break;
+                }
             }
         }
-        Console.Write(temp + " темп");
+    }
+
+    int[] newArray = new int[count];
+
+    for (int row = 0; row < count; row++)
+    {
+        newArray[row] = array[row];
+    }
+
+    return newArray;
+}
+
+void PrintArray(int[] print)
+{
+    for (int row = 0; row < print.Length; row++)
+    {
+        Console.Write(print[row] + " ");
     }
 }
 
-int[] arrayCopy = new int[count];
 
-for (int row = 0; row < arrayCopy.Length; row++)
-{
-    arrayCopy[row] = array[row];
-}
-
+FillArray(somethingArray);
+PrintArray(somethingArray);
+int[] mrArray = ForCopyMethod(somethingArray);
 Console.WriteLine();
+PrintArray(mrArray);
 
-for (int row = 0; row < array.Length; row++)
-{
-    Console.WriteLine(array[row] + "ар");
-}
-Console.WriteLine(count);
-Console.WriteLine();
-
-for (int row = 0; row < arrayCopy.Length; row++)
-{
-    Console.WriteLine(arrayCopy[row] + "ар");
-}
 
