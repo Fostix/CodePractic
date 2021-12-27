@@ -1,8 +1,11 @@
 ﻿// Написать программу, которая из имеющегося массива целых чисел формирует массив из четных чисел. 
 // Первоначальный массив можно ввести с клавиатуры, либо сгенерировать случайным образом. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
-int arrayLengthz = 5;
-int[] somethingArray = new int[arrayLengthz];
+
+
+
+
+int[] somethingArray = new int[20];
 
 
 
@@ -11,15 +14,10 @@ void FillArray(int[] fill)
 {
     for (int row = 0; row < fill.Length; row++)
     {
-        fill[row] = new Random().Next(1, 10);
+        fill[row] = new Random().Next(-10, 10);
     }
-    // for(int row = 0; row < fill.Length; row++)
-    // {
-    //     Console.Write(fill[row] + " first");
-    // }
+    fill[4] = 1;
 }
-FillArray(somethingArray);
-
 
 
 int[] ForCopyMethod(int[] array)
@@ -31,17 +29,15 @@ int[] ForCopyMethod(int[] array)
         if (0 == array[row] % 2)
         {
             temp = array[row];
-            array[row] = 1;
             for (int howRow = 0; howRow < array.Length; howRow++)
             {
-                if (0 != array[howRow] % 2 | 0 == array[howRow])
+                if (0 != array[howRow] % 2)
                 {
                     array[howRow] = temp;
                     count++;
                     break;
                 }
             }
-            Console.Write(temp);
         }
     }
 
@@ -52,70 +48,22 @@ int[] ForCopyMethod(int[] array)
         newArray[row] = array[row];
     }
 
-    Console.Write(count);
     return newArray;
 }
 
+void PrintArray(int[] print)
+{
+    for (int row = 0; row < print.Length; row++)
+    {
+        Console.Write(print[row] + " ");
+    }
+}
+
+
+FillArray(somethingArray);
+PrintArray(somethingArray);
 int[] mrArray = ForCopyMethod(somethingArray);
-
-
+Console.WriteLine();
 PrintArray(mrArray);
 
-
-
-
-
-
-
-
-// (int[], int) lol = ForShift(somethingArray);
-// int[] newArray = lol.Item1;
-// int count = lol.Item2;
-
-
-// void forCopyMethod(int[] array, int count)
-// {
-
-
-
-
-// }
-
-
-
-// forCopyMethod(int[] array)
-
-
-
-// for (int i = 0; i < array.Length; i++)
-// {
-//     Console.Write(array);
-// }
-
-
-//Console.WriteLine(count);
-
-
-//int[] arrayCopy = new int[count];
-
-
-
-// for (int row = 0; row < arrayCopy.Length; row++)
-// {
-//     arrayCopy[row] = first[row];
-// }
-
-// Console.WriteLine();
-
-// for (int row = 0; row < first.Length; row++)
-// {
-//     Console.WriteLine(first[row] + "ар");
-// }
-// //Console.WriteLine(count);
-// Console.WriteLine();
-
-// for (int row = 0; row < arrayCopy.Length; row++)
-// {
-//     Console.WriteLine(arrayCopy[row] + "ар");
-// }
 
