@@ -93,22 +93,22 @@ int count = lol.Item2;
 
 
 
-for (int row = 0; row < arrayCopy.Length; row++)
-{
-    arrayCopy[row] = first[row];
-}
+// for (int row = 0; row < arrayCopy.Length; row++)
+// {
+//     arrayCopy[row] = first[row];
+// }
 
-Console.WriteLine();
+// Console.WriteLine();
 
-for (int row = 0; row < first.Length; row++)
-{
-    Console.WriteLine(first[row] + "ар");
-}
-//Console.WriteLine(count);
-Console.WriteLine();
+// for (int row = 0; row < first.Length; row++)
+// {
+//     Console.WriteLine(first[row] + "ар");
+// }
+// //Console.WriteLine(count);
+// Console.WriteLine();
 
-for (int row = 0; row < arrayCopy.Length; row++)
-{
-    Console.WriteLine(arrayCopy[row] + "ар");
-}
+// for (int row = 0; row < arrayCopy.Length; row++)
+// {
+//     Console.WriteLine(arrayCopy[row] + "ар");
+// }
 
