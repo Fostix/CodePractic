@@ -22,13 +22,14 @@ void FillArray(int[] fill)
 
 int[] ForCopyMethod(int[] array)
 {
-    int temp;
-    int count = 0;
+    int temp,
+    count = 0;
     for (int row = 0; row < array.Length; row++)
     {
         if (0 == array[row] % 2)
         {
             temp = array[row];
+            array[row] = 1;
             for (int howRow = 0; howRow < array.Length; howRow++)
             {
                 if (0 != array[howRow] % 2)
